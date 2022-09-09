@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.shadow {
+  box-shadow: 0px 10px 10px 5px #ddd;
+}
+
+.info {
+  padding: 1rem;
+  margin: 2rem 0;
+  position: relative;
+}
+.info > .imgContainer {
+  margin: 1rem auto;
+  width: 200px;
+  position: relative;
+}
+.info > .imgContainer > img {
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid #88b9d7;
+  box-shadow: 10px 20px 10px 1px #fefefe;
+}
+.info > .imgContainer:after {
+  position: absolute;
+  bottom: 7%;
+  right: -14%;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #88b9d7;
+  box-shadow: 0px 2px 5px 1px #ddd;
+}
+.info > .nameContainer h1 {
+  color: #673ab7;
+  margin: 0.5rem 0;
+}
+.info > .nameContainer p {
+  font-size: 19px;
+  color: #707070;
+  margin: 0.5rem 0;
+}
+.info > .contacts {
+  justify-content: center;
+  margin: 1rem 0;
+}
+.info > .contacts div {
+  margin: 0.5rem 2rem;
+  font-size: 18px;
+  display: flex;
+  color: "#A8A8A8";
+}
+.info > .contacts div > span {
+  color: #673ab7;
+  margin-right: 0.5rem;
+}
+.info > .aboutText {
+  width: 50%;
+  margin: auto;
+  font-size: 16px;
+}
+.info > .social-icons {
+  width: 300px;
+  margin: 0.5rem auto;
+}
+.info > .social-icons a {
+  padding: 0.5rem;
+}
+.info > .social-icons a img {
+  width: 40px;
+  transition: transform 300ms;
+}
+.info > .social-icons a img:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+.info > .resumeBtnDiv {
+  margin-top: 2rem;
+}
+.info > .resumeBtnDiv > a {
+  background: linear-gradient(to right, #4b9beb, #185a9d);
+  color: white;
+  text-decoration: none;
+  border: 0;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: filter 300ms;
+  box-shadow: 10px 10px 20px #d5d7d9, -10px -10px 20px #ffffff;
+}
+.info > .resumeBtnDiv > a:focus {
+  outline: none;
+}
+.info > .resumeBtnDiv > a > img {
+  filter: invert(1);
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+.info > .resumeBtnDiv > a:hover {
+  filter: brightness(1.1);
+}
+.info::before {
+  content: " ";
+  position: absolute;
+  top: -212px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background: #673ab7;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+@media all and (max-width: 900px) {
+  .info .aboutText {
+    width: 80%;
+  }
+}
+@media all and (max-width: 600px) {
+  .info .aboutText {
+    width: 100%;
+  }
+}
+
+.knowledge {
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+.knowledge .languagesContainer {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+}
+.knowledge .languagesContainer h1 {
+  color: #707070;
+}
+.knowledge .languagesContainer .icons {
+  margin-top: 1rem;
+}
+.knowledge .languagesContainer .icons > div {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+.knowledge .languagesContainer img {
+  width: 100%;
+  height: 100%;
+}
+.knowledge .languagesContainer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #707070;
+}
+.knowledge .proficiencyCont {
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #707070;
+}
+.knowledge .proficiencyCont > h1 {
+  font-size: 38px;
+}
+.knowledge .proficiencyCont > .cards > .card {
+  margin: 1rem 1.5rem;
+  flex: 1;
+}
+.knowledge .proficiencyCont > .cards > .card img {
+  width: 180px;
+}
+.knowledge .proficiencyCont > .cards > .card h2 {
+  margin: 0.5rem;
+  font-size: 22px;
+}
+.knowledge .proficiencyCont > .cards > .card p {
+  margin: 0.5rem;
+  font-size: 16px;
+}
+
+.projects {
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-top: 1px solid #ddd;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects > .cards {
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.projects > .cards > .card {
+  background-color: white;
+  width: 30%;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  transition: box-shadow 0.6s cubic-bezier(0.43, 0.195, 0.02, 1);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 1px 0 rgba(0, 0, 0, 0.03),
+    1px -1px 0 rgba(0, 0, 0, 0.03), -1px -1px 0 rgba(0, 0, 0, 0.03);
+}
+@media all and (max-width: 900px) {
+  .projects > .cards > .card {
+    width: 46%;
+  }
+}
+@media all and (max-width: 600px) {
+  .projects > .cards > .card {
+    width: 100%;
+  }
+}
+.projects > .cards > .card:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.05),
+    0 4px 6px rgba(0, 0, 0, 0.05), 0 8px 12px rgba(0, 0, 0, 0.05),
+    0 12px 24px rgba(0, 0, 0, 0.05);
+}
+.projects > .cards > .card > .img-top > img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.projects > .cards > .card > .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  padding: 1rem;
+  text-align: left;
+}
+.projects > .cards > .card > .card-body .title {
+  justify-self: flex-start;
+}
+.projects > .cards > .card > .card-body .title + p {
+  margin: 0.5rem 0;
+  font-size: 16px;
+  color: #707070;
+}
+.projects > .cards > .card > .card-body .links {
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.projects > .cards > .card > .card-body .links p {
+  justify-content: left;
+  font-weight: 500;
+  color: #2a295a;
+}
+.projects > .cards > .card > .card-body .links img {
+  width: 40px;
+  margin: 0.5rem;
+}
+
+.coding-data {
+  background: #43cea2;
+  /* fallback for old browsers */
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
+.coding-data > div {
+  padding: 1rem;
+  color: white;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media all and (max-width: 900px) {
+  .coding-data > div {
+    width: 50%;
+  }
+}
+@media all and (max-width: 600px) {
+  .coding-data > div {
+    width: 100%;
+  }
+}
+.coding-data .circle {
+  width: 180px;
+  height: 180px;
+  border: 1.2rem solid #fff;
+  border-radius: 50%;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+.coding-data h2 {
+  padding: 0.5rem;
+}
+
+.git {
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 10px whitesmoke;
+}
+
+.gitdiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 900px) {
+  .gitdiv {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .git {
+    max-width: 500px;
+  }
+  .gitdiv {
+    display: block;
+    justify-content: center;
+  }
+}
