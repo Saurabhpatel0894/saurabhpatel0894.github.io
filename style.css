@@ -39,6 +39,7 @@ section {
 .services,
 .skills,
 .project,
+.git,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -46,6 +47,7 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.git .git-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +70,7 @@ section .title::before {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: #111;
+  background:black;
   transform: translateX(-50%);
 }
 section .title::after {
@@ -78,7 +80,7 @@ section .title::after {
   font-size: 20px;
   color: crimson;
   padding: 0 5px;
-  background: #fff;
+  background: white;
   transform: translateX(-50%);
 }
 
@@ -264,16 +266,19 @@ section .title::after {
 
 /* services section styling */
 .services,
-.project {
+.project,
+.contact{
   color: #fff;
   background: #111;
 }
 .services .title::before,
-.project .title::before {
+.project .title::before,
+.contact .title::before{
   background: #fff;
 }
 .services .title::after,
-.project .title::after {
+.project .title::after,
+.contact .title::after {
   background: #111;
   content: "what i provide";
 }
@@ -495,6 +500,10 @@ section .title::after {
 .owl-dot:hover {
   background: crimson !important;
 }
+.git .title::after {
+  content: "see my git stats";
+  background: white;
+}
 
 /* contact section styling */
 .contact .title::after {
@@ -534,11 +543,11 @@ section .title::after {
 .contact .contact-content .info a:hover,
 .contact .contact-content .info a:link {
   text-decoration: none;
-  color: #111;
+  color: white;
 }
 
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color:white;
 }
 .contact .right form .fields {
   display: flex;
