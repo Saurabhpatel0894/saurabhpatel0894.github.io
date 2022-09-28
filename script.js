@@ -74,5 +74,4 @@ $(document).ready(function () {
 
 
 GitHubCalendar(".calendar", "Saurabhpatel0894");
-    // or enable responsive functionality
 GitHubCalendar(".calendar", "Saurabhpatel0894", { responsive: true });
