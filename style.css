@@ -610,9 +610,9 @@ section .title::after {
 }
 /* footer section styling */
 footer {
-  background: #111;
+  background:white;
   padding: 15px 23px;
-  color: #fff;
+  color:black;
   text-align: center;
 }
 footer span a {
