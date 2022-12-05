@@ -427,6 +427,7 @@ img.man-icons {
 .project-subtitle {
   margin-bottom: var(--mb-4);
   padding-bottom: 3.5rem;
+  font-size: 0.9rem;
 }
 .small-btn {
   padding: 0.3rem 1.3rem;
