@@ -221,6 +221,7 @@ img {
 .home {
   height: calc(100vh - 3rem);
   row-gap: 1rem;
+  margin: auto;
 }
 .home-data {
   align-self: center;
@@ -228,6 +229,7 @@ img {
 .home-title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  text-align: center;
 }
 .home-title-color {
   color: var(--first-color);
@@ -235,6 +237,7 @@ img {
 .home-social {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 .home-social-icon {
   width: max-content;
@@ -685,6 +688,11 @@ img.man-icons {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   
+}
+.center{
+  text-align: center;
+  margin: auto;
+  align-items: center;
 }
 
 

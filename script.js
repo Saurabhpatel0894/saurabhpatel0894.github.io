@@ -52,20 +52,20 @@ const showMenu = (toggleId, navId) => {
   const sr = ScrollReveal({
     origin: "top",
     distance: "80px",
-    duration: 2000,
+    duration: 1000,
     reset: true,
   });
   
   /*SCROLL HOME*/
   sr.reveal(".home-title", {});
   sr.reveal(".button", { delay: 100 });
-  sr.reveal(".home-img", { delay: 200 });
-  sr.reveal(".home-social-icon", { interval: 200 });
+  sr.reveal(".home-img", { delay: 100 });
+  sr.reveal(".home-social-icon", { interval: 100 });
   
   /*SCROLL ABOUT*/
   sr.reveal(".about-img", {});
-  sr.reveal(".about-subtitle", { delay: 200 });
-  sr.reveal(".about-text", { delay: 200 });
+  sr.reveal(".about-subtitle", { delay: 100 });
+  sr.reveal(".about-text", { delay: 100 });
   
   /*SCROLL SKILLS*/
   sr.reveal(".skills-subtitle", {});
@@ -74,7 +74,7 @@ const showMenu = (toggleId, navId) => {
   // sr.reveal(".skills-img", { delay: 600 });
   
   /*SCROLL projects*/
-  sr.reveal(".project-img", { interval: 200 });
+  sr.reveal(".project-img", { interval: 100 });
   
   /*SCROLL CONTACT*/
     // sr.reveal(".contact-input", { interval: 200 });
@@ -82,9 +82,9 @@ const showMenu = (toggleId, navId) => {
     
   
   
-    var messageArr = ["Java Backend Developer", "Frontend Developer", "Backend Developer"];
+    var messageArr = ["Java Backend Developer"];
     var textPosition = 0;
-    var speed = 200;
+    var speed = 000;
   
     typewriter = () => {
       // for(let i = 0; i < messageArr.length; i++) {
