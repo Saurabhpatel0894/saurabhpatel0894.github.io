@@ -18,7 +18,7 @@
     --main-color: hsl(var(--hue-color), 69%, 61%);
     --bg-color: hsl(var(--hue-color), 60%, 99%);
     --text-color: hsl(var(190), 8%, 45%);
-    --hover:hsl(var(--hue-color), 69%, 61%);
+    --hover:hsl(var(160), 69%, 61%);
 
     --big-font: 3.2rem;
     --medium-font:1.8rem;
@@ -264,13 +264,13 @@ header{
 }
 /* hover */
 .skills-box:hover{
-    background-color: #02225a;
+    background-color: #0549c0;
 }
 .skills-box:hover h3{
     color: #fff;
 }
 .skills-box:hover .fa-brands{
-    color: #22cf91;
+    color: #22f3a6;
 }
 .skills-box:hover .fa-sharp{
     color: #22cf91;
@@ -285,7 +285,7 @@ header{
 .project-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 2rem;
 }
 .project-box img{
