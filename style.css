@@ -18,7 +18,7 @@
     --main-color: hsl(var(--hue-color), 69%, 61%);
     --bg-color: hsl(var(--hue-color), 60%, 99%);
     --text-color: hsl(var(190), 8%, 45%);
-    --hover:hsl(var(160), 69%, 61%);
+    --hover:hsl(var(190), 69%, 61%);
 
     --big-font: 3.2rem;
     --medium-font:1.8rem;
@@ -396,7 +396,7 @@ textarea::placeholder {
     display: grid;
     place-items: center;
     padding: 20px;
-    background: #ebebeb;
+    background: #eeeaea;
     width: 100%;
     color: #000;
 }
