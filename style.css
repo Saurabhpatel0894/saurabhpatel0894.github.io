@@ -18,7 +18,7 @@
     --main-color: hsl(var(--hue-color), 69%, 61%);
     --bg-color: hsl(var(--hue-color), 60%, 99%);
     --text-color: hsl(var(190), 8%, 45%);
-    --hover:hsl(var(190), 69%, 61%);
+    --hover:hsl(196, 77%, 38%);;
 
     --big-font: 3.2rem;
     --medium-font:1.8rem;
